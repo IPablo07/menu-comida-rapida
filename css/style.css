@@ -120,3 +120,44 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
+
+/* ===========================
+   SECCIÓN MENÚ (categorías + productos)
+   =========================== */
+.seccion-menu {
+    padding: 32px 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.categorias-nav {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 4px 12px 4px;
+    margin-bottom: 24px;
+    scrollbar-width: thin;
+}
+
+.categoria-btn {
+    flex-shrink: 0;
+    font-family: var(--fuente-texto);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-primario);
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.categoria-btn:hover {
+    background-color: #FDEEE8;
+}
+
+.categoria-activa {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
