@@ -1,1 +1,33 @@
-/* Estilos del menú */
+/* ===========================
+   VARIABLES DEL SISTEMA DE DISEÑO
+   =========================== */
+:root {
+    /* Colores principales */
+    --color-primario: #C1391E;      /* Rojo-naranja del logo */
+    --color-secundario: #F5B942;    /* Dorado/amarillo del logo */
+    --color-acento: #3FBFB0;        /* Turquesa - detalles especiales */
+
+    /* Colores neutros */
+    --color-texto: #1A1A1A;         /* Negro suave para texto */
+    --color-fondo-tarjeta: #FFF8F0; /* Blanco cálido */
+    --color-blanco: #FFFFFF;
+
+    /* Tipografías */
+    --fuente-titulos: 'Fredoka', sans-serif;
+    --fuente-texto: 'Poppins', sans-serif;
+}
+
+/* ===========================
+   RESET BÁSICO
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    color: var(--color-texto);
+    background-color: var(--color-fondo-tarjeta);
+}
