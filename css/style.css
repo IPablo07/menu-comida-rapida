@@ -31,3 +31,38 @@ body {
     color: var(--color-texto);
     background-color: var(--color-fondo-tarjeta);
 }
+
+/* ===========================
+   HEADER
+   =========================== */
+.header {
+    background-color: var(--color-primario);
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.header-contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.header-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 2rem;
+    color: var(--color-secundario);
+    margin-bottom: 8px;
+}
+
+.header-subtitulo {
+    font-family: var(--fuente-texto);
+    font-size: 0.95rem;
+    color: var(--color-blanco);
+    opacity: 0.9;
+}
