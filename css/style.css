@@ -66,3 +66,57 @@ body {
     color: var(--color-blanco);
     opacity: 0.9;
 }
+
+/* ===========================
+   BANNER
+   =========================== */
+.banner {
+    background-color: var(--color-secundario);
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.banner-contenido {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.banner-decoracion {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-primario);
+    margin-bottom: 12px;
+    letter-spacing: 8px;
+}
+
+.banner-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 1.6rem;
+    color: var(--color-texto);
+    margin-bottom: 8px;
+}
+
+.banner-texto {
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    color: var(--color-texto);
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+
+.banner-boton {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
