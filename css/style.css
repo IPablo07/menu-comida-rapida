@@ -230,3 +230,97 @@ body {
 .producto-oculto {
     display: none;
 }
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer {
+    background-color: var(--color-texto);
+    color: var(--color-blanco);
+    padding: 40px 16px 20px;
+}
+
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.footer-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.footer-texto {
+    font-family: var(--fuente-texto);
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-bottom: 4px;
+}
+
+.footer-link {
+    font-family: var(--fuente-texto);
+    font-size: 0.85rem;
+    color: var(--color-blanco);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 1;
+}
+
+.footer-boton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--fuente-texto);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-blanco);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.footer-whatsapp:hover {
+    background-color: #25D366;
+}
+
+.footer-llamar:hover {
+    background-color: var(--color-primario);
+}
+
+.footer-redes {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-icono {
+    color: var(--color-blanco);
+    font-size: 1.4rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-icono:hover {
+    color: var(--color-secundario);
+    transform: scale(1.15);
+}
+
+.footer-copy {
+    text-align: center;
+    font-family: var(--fuente-texto);
+    font-size: 0.75rem;
+    opacity: 0.6;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
