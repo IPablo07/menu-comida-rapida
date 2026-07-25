@@ -40,3 +40,31 @@ botonesCategoria.forEach(function (boton) {
     });
 
 });
+// ===========================
+// MODO OSCURO
+// ===========================
+
+const botonModoOscuro = document.getElementById('boton-modo-oscuro');
+const iconoModoOscuro = botonModoOscuro.querySelector('i');
+
+// 1. Al cargar la página, revisamos si el usuario ya había elegido modo oscuro antes
+if (localStorage.getItem('modoOscuro') === 'activado') {
+    document.body.classList.add('modo-oscuro');
+    iconoModoOscuro.classList.replace('fa-moon', 'fa-sun');
+}
+
+// 2. Escuchamos el click del botón
+botonModoOscuro.addEventListener('click', function () {
+
+    document.body.classList.toggle('modo-oscuro');
+
+    // 3. Revisamos si quedó activado o no, para guardar la preferencia y cambiar el ícono
+    if (document.body.classList.contains('modo-oscuro')) {
+        localStorage.setItem('modoOscuro', 'activado');
+        iconoModoOscuro.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        localStorage.setItem('modoOscuro', 'desactivado');
+        iconoModoOscuro.classList.replace('fa-sun', 'fa-moon');
+    }
+
+});
